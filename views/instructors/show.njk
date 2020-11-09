@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="card">
-    <section class="avatar" style=" background: url({{ instrucotr.avatar_url }}) no-repeat center center / cover">
+    <section class="avatar" style=" background: url({{ instructor.avatar_url }}) no-repeat center center / cover">
 
     </section>
     <section class="details">
@@ -33,7 +33,7 @@
             <div>Desde</div>
             <div>{{ instructor.created_at }}</div>
         </div>
-        
+    <a href="/instructors/{{ instructor.id }}/edit" class="button">Editar</a>        
     </section>
 </div>
 
